@@ -26,7 +26,10 @@ app.use('/api',tasksRoutes);
 
 
 // Static files
-app.use(express.static(path.join(__dirname, 'dist')));
+// npm install rxjs@6.0.0 --save
+// ng update @angular/cli
+// ng update @angular/core
+app.use(express.static(path.join(__dirname, 'dist/client')));
 
 // Start server
 app.listen(3000, function(){
